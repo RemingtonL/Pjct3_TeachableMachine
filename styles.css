@@ -1,0 +1,94 @@
+/* Set global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9e0dc;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all text */
+}
+
+/* Header styles */
+header {
+    background-color: #436f5a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Floating navigation bar styles */
+.floating-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #587c68;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow effect */
+}
+
+.floating-nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.floating-nav a:hover {
+    background-color: #3b5544;
+    color: #ffffff;
+}
+
+/* Content area styles */
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the content container */
+}
+
+/* Section styles */
+.section {
+    background-color: #f8f1df;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px; /* Limit content width for better readability */
+}
+
+/* Section title styles */
+.section h2 {
+    background-color: #436f5a;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px; /* Add rounded corners to section titles */
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center the images */
+}
+
+/* Video styles */
+video {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #587c68; /* Add a border around the video */
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #587c68;
+    color: #ffffff;
+    margin-top: 20px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate Student Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Graduate Student Project: AI, Ethics & Art</h1>
+    </header>
+    
+    <!-- 导航栏 -->
+    <nav class="floating-nav">
+        <a href="#objectives">Project Objectives</a>
+        <a href="#scope">Project Scope</a>
+        <a href="#process">Process</a>
+        <a href="#lessons">Lessons Learned</a>
+        <a href="#video">Video</a>
+        <a href="#test-model">Test Model</a>
+    </nav>
+
+    <div class="content">
+        <section id="objectives" class="section">
+            <h2>Project Objectives</h2>
+            <p>Create an algorithm and export it into an API using Google’s Teachable Machine. Reflecting on Safiya Noble's book and this activity, submit a project statement with an embedded video of the algorithm at work.</p>
+        </section>
+
+        <section id="scope" class="section">
+            <h2>Project Scope</h2>
+            <p>Classification: Popular/Mainstream Candy Sold in the United States</p>
+            <p>Range: 10 King Size Candies</p>
+            <p>Item List: Almond Joy, Crunch, Heath, Kit Kat, M&Ms, Reese's, Snickers, Starburst, Twix, Wuchamacallit</p>
+            <p>Image Samples: Over 300 for each classified item</p>
+            <img src="images/teachable_machine.png" alt="Teachable Machine Screenshot">
+        </section>
+
+        <section id="process" class="section">
+            <h2>Process</h2>
+            <p>Initially, only 150 samples were collected for each item. The machine model was not able to differentiate and identify over half of the candy bars. The sample intake was increased to at least 300 for each item.</p>
+            <p>Overall, the machine model was able to identify all candy bars but had some issues with Twix Bars. This may be due to sample item quality and variety.</p>
+        </section>
+
+        <section id="lessons" class="section">
+            <h2>Lessons Learned</h2>
+            <p>This project demonstrated that code is nuanced, complex, and requires validation. Many factors and variables must be considered to ensure the model is reliable and efficient.</p>
+            <p>Applying these lessons showed the importance of considering social, cultural, and power dynamics, as mentioned by Safiya Noble in her book.</p>
+        </section>
+
+        <section id="video" class="section">
+            <h2>Video</h2>
+            <p>Below is an embedded video demonstrating the algorithm at work, showcasing how the classification process works step-by-step.</p>
+            <video controls>
+                <source src="videos/algorithm_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="test-model" class="section">
+            <h2>Test Model</h2>
+            <p>Use the model below to test various candy classifications in real-time. Upload an image of candy to see how the model classifies it.</p>
+            <div class="test-model-container">
+                <p>Test model feature is currently under development. Please check back later for updates.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Graduate Student Project - AI, Ethics & Art</p>
+    </footer>
+</body>
+</html>
