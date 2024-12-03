@@ -40,7 +40,7 @@
             <p>Before the Test</p>
             <p>Because both of us encountered issue using the CAMERAs, one of our group member ordered a BRAND NEW laptop online to use the CAMERA. We really appreciate this course which help us buying a new laptop with super HD CAMERA.</p>
             <p>TEST 1. Classic Image Classification</p>
-            <p>We collect the image samples by recording showing the item in front of the web camera. After the first attempt the precision is not that great.
+            <p>In this test, we will classify some tools, including hammer, screwdriver and plier. We collect the image samples by recording showing the item in front of the web camera. After the first attempt the precision is not that great.
                  As you can see below, the plier was thought to be a screwdriver</p>
             <img src="training1.png" alt="first attempt">
             <p>Then, we collect more sample for those three kinds of tool to improve the precision and add one more class named "hand" to on behalf of our hands.
@@ -65,22 +65,47 @@
         </section>
 
         <section id="lessons" class="section">
-            <h2>Lessons Learned</h2>
-            <p>Joy Buolamwini's Unmasking AI is an in-depth exploration of the ethical implications of artificial intelligence technology, specifically the bias surrounding facial recognition technology and its potential harm to society. Buolamwini uses her own experience and in-depth research to reveal racial, gender, and cultural biases in the design and deployment of artificial intelligence technologies. This book conveys the inequalities that AI technology can cause and calls on technology developers, policymakers, and the public to take action to make AI technology more equitable and just.
+            <h1>Project Statement</h1>
+            <h2>Exploring Machine Learning Applications and Ethical Considerations Inspired by Joy Buolamwini's "Unmasking AI"</h2>
 
-            <p>1. Bias in facial recognition technology</p>   
-            <p>Buolamwini describes her own research showing that mainstream facial recognition systems have significantly higher error rates in identifying darker-skinned people and women than white men. Her experiments show that the lack of diverse data sets in the design and training of these algorithms leads to systemic bias against non-white groups and women.</p>  
-                
-            <p>2. Social impact of algorithmic discrimination</p>
-            <p>The book discusses the real-world impacts of algorithmic discrimination, particularly in sensitive areas such as law enforcement and public policy. The widespread use of facial recognition technology may exacerbate the problem of over-surveillance and unfair treatment of minority groups. Using examples and statistics, Buolamwini highlights how these technologies can inadvertently reinforce existing social inequalities.</p>
-                
-            <p>3. Advocate “algorithmic fairness”</p>
-            <p>Buolamwini founded the Algorithmic Justice League, which is dedicated to promoting more fair and responsible algorithm development. She called for tighter regulation and testing of algorithms for fairness and accuracy to ensure technology does not unfairly impact certain groups. She specifically called on technology companies and policymakers to listen to the voices of marginalized groups to reduce the adverse impact of technology on these groups.</p>
-                
-            <p>4. A call for change</p>    
-            <p>Buolamwini also offered suggestions for how to change the status quo, including advocating for more inclusive data sets, diversity in technology development processes, and comprehensive assessments of potential bias. By calling on the public, governments, companies, and academia to collaborate, she hopes to build more responsible and ethical AI systems.</p></p>
-            <p>Learned</p>
-            <p>Our project focuses on analyzing objects through algorithm recognition. In this process, we need to ensure that the algorithm is fair. Joy Buolamwini's "Unmasking AI" provided us with a lot of help and inspiration. I think this book not only tells us the problems of current AI algorithms, but also gives us a reminder. Let all those who will be involved in writing or using mechanical algorithms in the future pay attention to the fairness of algorithms.</p>
+            <p>In our recent group project, we delved into the fundamentals of machine learning by undertaking a series of tasks that included image classification, sound classification, and an advanced challenge of mapping hand gestures to musical notes to perform a song. This project not only allowed us to apply theoretical knowledge in practical scenarios but also prompted us to reflect on the broader implications of artificial intelligence (AI) in society.</p>
+
+            <p>Inspired by Joy Buolamwini's book <em>Unmasking AI: My Mission to Protect What Is Human in a World of Machines</em>, we aimed to understand the ethical considerations surrounding AI, particularly issues of bias, fairness, and inclusivity. Through the lens of our project, we directly engaged with challenges described by Buolamwini—ensuring fairness and accuracy while recognizing hidden biases in datasets.</p>
+
+            <h3>Project Overview</h3>
+            <p><strong>1. Image Classification:</strong> We trained a machine learning model to recognize and classify images of basic tools—hammer, pliers, and screwdriver. Using a dataset of labeled images, we employed a convolutional neural network (CNN) to learn distinguishing features and achieve accurate classifications. We started with a small dataset and iteratively expanded it, incorporating diverse samples to increase model robustness. For instance, we captured images under varying lighting conditions and angles, reflecting real-world scenarios.</p>
+
+            <p><strong>2. Sound Classification:</strong> We developed a model to differentiate between distinct sounds: whistling, finger snapping, and clapping. By processing audio samples and extracting features such as frequency and amplitude, the model utilized recurrent neural networks (RNNs) to handle the temporal nature of sound data. This task posed unique challenges, such as ensuring background noise did not interfere with classification accuracy. To address this, we recorded "background noise" as a separate class and used it during training to improve the model's performance.</p>
+
+            <p><strong>3. Hand Gesture Recognition and Musical Mapping:</strong> The most challenging task involved training a model to recognize specific hand gestures and map them to musical notes. By capturing images of various gestures and associating each with a corresponding note, we enabled the model to interpret real-time hand movements and produce a melody. This process required extensive data collection, with hundreds of samples for each gesture, and careful tuning of the model to minimize errors. While the model achieved a high level of accuracy, some limitations remained, especially in distinguishing similar gestures.</p>
+
+            <h3>Methodologies</h3>
+            <p><strong>Data Collection and Preprocessing:</strong> For each task, we gathered datasets that were representative and diverse. For image classification, we took photographs of tools under different lighting conditions and orientations. For sound classification, we recorded audio samples in various environments, ensuring that ambient noise was considered. For hand gesture recognition, we captured images of gestures made by individuals with varying hand sizes, skin tones, and accessories.</p>
+
+            <p><strong>Model Training:</strong> We utilized popular machine learning frameworks such as TensorFlow and Keras. For image classification, CNNs were chosen due to their effectiveness in visual pattern recognition. For sound classification, RNNs and Long Short-Term Memory (LSTM) networks were employed to manage sequential data. The hand gesture model leveraged a combination of techniques, including data augmentation, to enhance its ability to generalize.</p>
+
+            <p><strong>Validation and Testing:</strong> We split our datasets into training and testing sets, using techniques like cross-validation to assess model performance and prevent overfitting. This step was critical in identifying areas where the models struggled and required further refinement.</p>
+
+            <h3>Integration of Ethical Considerations</h3>
+            <p>Joy Buolamwini's <em>Unmasking AI</em> emphasizes the concept of the "coded gaze," which refers to the biases embedded within AI systems, often reflecting the prejudices of their creators and the data they are trained on. This notion resonated with us and influenced several aspects of our project:</p>
+
+            <p><strong>1. Data Bias Awareness:</strong> Recognizing that biased data leads to biased models, we scrutinized our datasets for diversity. For example, in the hand gesture recognition task, we included images of hands with different skin tones, sizes, and accessories (like rings or bracelets) to prevent the model from underperforming on certain demographics. Similarly, for sound classification, we ensured that recordings were made in both quiet and noisy environments to account for different real-world conditions.</p>
+
+            <p><strong>2. Fairness in Model Performance:</strong> We monitored the model's accuracy across different subsets of data to identify any disparities in performance. For instance, during the image classification task, we found that the model initially struggled to distinguish between pliers and screwdrivers when the lighting was dim. This observation led us to expand our dataset and include more challenging examples, which ultimately improved the model's robustness.</p>
+
+            <p><strong>3. Inclusivity in Design:</strong> We considered the accessibility of our system. By enabling music to be played through gestures, we opened possibilities for individuals who may not have the ability to play traditional instruments. This aspect of our project highlighted the potential for AI to empower users in unique and meaningful ways, aligning with Buolamwini's vision of ethical and inclusive technology.</p>
+
+            <p><strong>4. Reflection on Societal Impact:</strong> Beyond the technical details, our project served as a reminder of the broader implications of AI. The biases and limitations we encountered in our models echoed the challenges faced by real-world systems, particularly in areas like facial recognition and automated decision-making. These reflections reinforced the importance of ethical considerations in every stage of AI development.</p>
+
+            <h3>Challenges and Reflections</h3>
+            <p>Despite our best efforts, we encountered several challenges that underscored the complexity of developing fair and accurate AI systems:</p>
+
+            <p><strong>Addressing Unconscious Bias:</strong> Despite our efforts to create diverse datasets, we found that certain biases persisted. For example, the hand gesture model initially struggled with darker skin tones, echoing Buolamwini's experiences with facial recognition technologies. This highlighted the pervasive nature of bias in AI and underscored the importance of continuous vigilance.</p>
+
+            <p><strong>Ethical Data Collection:</strong> We grappled with questions about consent and privacy, particularly when capturing images and sounds that could be personally identifiable. This led us to implement strict protocols for data handling and to anonymize data where possible. While this added complexity to the project, it was a necessary step in ensuring ethical practices.</p>
+
+            <p><strong>Limitations of AI:</strong> Our project reinforced the understanding that AI models are only as good as the data and assumptions they are built upon. This aligns with Buolamwini's assertion that AI reflects both the aspirations and limitations of its creators. The process of refining our models served as a humbling reminder of the challenges inherent in developing fair and effective AI systems.</p>
+
         </section>
 
         <section id="test-model" class="section">
@@ -91,6 +116,13 @@
                 <a href="Test1/Test1.html" target="_blank" class="custom-button">Test1</a>
                 <a href="Test2/Test2.html" target="_blank" class="custom-button">Test2</a>
                 <a href="Test3/Test3.html" target="_blank" class="custom-button">Test3</a>
+            </div>
+        </section>
+
+        <section id="Github Link" class="section">
+            <h2>Github Link</h2>
+            <div class="test-model-buttons">
+                <a href="https://github.com/RemingtonL/Pjct3_TeachableMachine" target="_blank" class="custom-button">Git Hub</a>
             </div>
         </section>
         

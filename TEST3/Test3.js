@@ -27,11 +27,11 @@ function preload() {
 
 
 function setup() {
-  let canvas = createCanvas(800, 600);
+  let canvas = createCanvas(640, 520);
   canvas.parent('display-area'); 
 //Vedio catch!
   video = createCapture(VIDEO);
-  video.size(800, 600);
+  video.size(640, 520);
   video.hide(); 
   // STEP 2: Start classifying
   classifyVideo();

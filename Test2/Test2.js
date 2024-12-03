@@ -18,7 +18,7 @@ function preload() {
 
 function setup() {
   // Create a canvas and attach it to the HTML div with id 'display-area'
-  let canvas = createCanvas(800, 600);
+  let canvas = createCanvas(640, 520);
   canvas.parent('display-area'); 
 
   // Set text alignment and styles for drawing on the canvas

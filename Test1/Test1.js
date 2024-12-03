@@ -19,12 +19,12 @@ function preload() {
 
 function setup() {
   // Create a canvas and attach it to the HTML div with id 'display-area'
-  let canvas = createCanvas(800, 600);
+  let canvas = createCanvas(640, 520);
   canvas.parent('display-area'); 
 
   // Create the video
   video = createCapture(VIDEO);
-  video.size(800, 600); 
+  video.size(640, 520); 
   video.hide(); 
 
   // Start classifying the video
