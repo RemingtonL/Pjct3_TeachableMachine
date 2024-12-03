@@ -101,6 +101,35 @@ video {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
 }
 
+/* Button container styles */
+.test-model-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons container */
+    gap: 20px; /* Add space between buttons */
+    margin: 20px 0; /* Add some margin above and below the buttons */
+}
+
+/* Custom button styles */
+.custom-button {
+    background: linear-gradient(45deg, #00f, #1e90ff); /* Gradient background */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transition for hover effect */
+    border: 2px solid #4b0082; /* Add border for visual interest */
+    display: inline-block; /* Ensure button displays correctly */
+    text-align: center; /* Center text inside the button */
+}
+
+/* Button hover effect */
+.custom-button:hover {
+    transform: scale(1.1); /* Slightly increase the size when hovered */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Increase shadow effect */
+}
+
 
 /* Footer styles */
 footer {

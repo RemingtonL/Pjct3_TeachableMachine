@@ -28,11 +28,11 @@
 
         <section id="scope" class="section">
             <h2>Project Scope</h2>
-            <p>Classification: </p>
-            <p>Range: </p>
-            <p>Item List: </p>
-            <p>Image Samples: </p>
-            <img src="images/teachable_machine.png" alt="Teachable Machine Screenshot">
+            <p>Classification:Hand Singal and Music </p>
+            <p>Range: 7 hand singals</p>
+            <p>Item List:1, 2, 3, 4, 5, 6, 7 </p>
+            <p>Image Samples: over 400 of each</p>
+            
         </section>
 
         <section id="process" class="section">
@@ -48,19 +48,19 @@
             </p>
             <img src="training2.png" alt="second attempt">
             <p>Following is the video recording the test result</p>
-            <video src="TEST1.mp4" controls></video>
+            <video src="Test1/TEST1.mp4" controls></video>
             <p>TEST 2. Classic Sound Classification</p>
             <p>The second test is quite similar to the first one. The only difference is the media form. We replaced the image with sound from different musical instruments including guitar, violin and piano.</p>
             <p>One more thing, we have to record the background noise first to decrease the impact of noise on training.</p>
             <img src="training3.png" alt="second test">
-            <video src="TEST2.mp4" controls></video>
+            <video src="Test2/TEST2.mp4" controls></video>
             <p>TEST 3. Play Music With Your Hands</p>
             <p>In this test, we decided to play music just with our own hands, I mean, literally. First of all, we trained the model to identify different hand signals(Which is not standard hand singal) and connect them to 1-7. Then we extracted do re mi fa so ra shi so from a piano video as our "key"s. We make them to several single mp4 file. If the model detect certain hand singal, it will play the scale once. We set 1 second common interval to make it play scale every 1 second</p>
             <p>As you may know, playing music in this way require high precision. We tried 100 sample to train each hand singal but it turned out to be not precise. But when we increase the number of sample to 400 each, the problem could be solved 90%. I think it almost reach the limit of this browser-based model because the webpage almost crashed while preparing the data but managed to make it.</P>
             <p>As I mentioned above, it solve the 90% of the problem. It still make mistake so we have to put our hands really close to the camera and try our best to maintain the same hand signal in training set.
                 Here is a example clip of litte star we made. We also deployed this in this page, you can try it yourself.
             </p>
-            <video src="TEST3.mp4" controls></video>
+            <video src="Test3/TEST3.mp4" controls></video>
 
         </section>
 
@@ -83,24 +83,17 @@
             <p>Our project focuses on analyzing objects through algorithm recognition. In this process, we need to ensure that the algorithm is fair. Joy Buolamwini's "Unmasking AI" provided us with a lot of help and inspiration. I think this book not only tells us the problems of current AI algorithms, but also gives us a reminder. Let all those who will be involved in writing or using mechanical algorithms in the future pay attention to the fairness of algorithms.</p>
         </section>
 
-        <section id="video" class="section">
-            <h2>Video</h2>
-            <p>Below is an embedded video demonstrating the algorithm at work, showcasing how the classification process works step-by-step.</p>
-            <video controls>
-                <source src="videos/algorithm_demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-
         <section id="test-model" class="section">
             <h2>Test Model</h2>
-            <p>Christmas is coming soon, are you ready to sing Jingle Bells Band together? Our project trained the recognition of different gestures and bound different gestures to different tracks. Now, you can combine different gestures into Jingle Bells Band! Come and try it!</p>
-            <div class="test-model-container">
-                <a href="https://your-test-website.com" target="_blank">
-                    <img src="Christmas.png" alt="Let's go!">
-                </a>
+            <p>Ready to try our model for yourself? We offer three different categories of tests! Jsut follow our process and have Fun!</p>
+            
+            <div class="test-model-buttons">
+                <a href="Test1/Test1.html" target="_blank" class="custom-button">Test1</a>
+                <a href="Test2/Test2.html" target="_blank" class="custom-button">Test2</a>
+                <a href="Test3/Test3.html" target="_blank" class="custom-button">Test3</a>
             </div>
         </section>
+        
     </div>
 
     <footer>
