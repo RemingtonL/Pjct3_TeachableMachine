@@ -176,3 +176,10 @@ footer {
     border-radius: 10px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+.subheading {
+    font-weight: bold; 
+    text-decoration: underline; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    font-size: 1.2rem; 
+}
